@@ -1,0 +1,12 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 10px;
+}
+
+ul li {
+    list-style-type: decimal;
+    text-align: start;
+}
