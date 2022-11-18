@@ -1,0 +1,30 @@
+.new_post {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.input_field {
+    background-color: #333333;
+    height: 60px;
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.submit {
+    background-color: lightgray;
+    margin-top: 5px;
+    align-self: end;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: darkgray;
+}
