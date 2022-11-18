@@ -1,0 +1,19 @@
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    grid-area: nav;
+    padding: 10px;
+}
+
+.app-name {
+    font-family: Comfortaa, serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+#right-part-name {
+    color: #2d8661;
+    font-weight: bold;
+}
