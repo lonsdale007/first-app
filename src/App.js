@@ -29,7 +29,21 @@ function App() {
                 </div>
             </nav>
             <div className={'content'}>
-                Main content
+                <div className={'profile-cover'}>
+                    <img src={require('./img/cover.jpg')} alt={'profile-cover'}/>
+                </div>
+                <div className={'profile'}>
+                    <div className={'profile-avatar'}>
+                        <img src={require('./img/avatar.jpg')} width={150} height={150} alt={'profile-avatar'}/>
+                    </div>
+                    <div className={'profile-description'}>
+                        <div id={'profile-name'}>Danila Artemov</div>
+                        <div>Date of birth:</div>
+                        <div>City:</div>
+                        <div>Education:</div>
+                        <div>Web site:</div>
+                    </div>
+                </div>
             </div>
         </div>
     );
