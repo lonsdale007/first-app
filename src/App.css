@@ -10,6 +10,8 @@
     color: lightgray;
     font-family: Corbel, serif;
     font-size: 20px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .header {
@@ -47,4 +49,21 @@
 #right-part-name {
     color: #2d8661;
     font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.profile-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#profile-name {
+    font-size: 30px;
+    margin-bottom: 15px;
 }
