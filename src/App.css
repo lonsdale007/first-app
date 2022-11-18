@@ -17,3 +17,33 @@
     margin: 0 auto;
     width: 1200px;
 }
+
+.input_field {
+    background-color: #333333;
+    height: 60px;
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.submit_button {
+    background-color: lightgray;
+    margin-top: 5px;
+    align-self: end;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit_button:hover {
+    background-color: darkgray;
+}
+
+#right_part_name {
+    color: #2d8661;
+    font-weight: bold;
+}
