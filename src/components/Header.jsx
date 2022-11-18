@@ -1,13 +1,12 @@
 import logo from "../logo.svg";
-import '../css/Header.css';
+import h from './css/Header.module.css';
 
 function Header() {
     return (
-        <header className={'header'}>
-            <img src={logo} width={60} height={60} alt={''}/>
-            <div className={'app-name'}>
-                <text id={'left-part-name'}>Li-</text>
-                <text id={'right-part-name'}>ON</text>
+        <header className={h.header}>
+            <img src={logo} alt={''}/>
+            <div className={h.app_name}>
+                Li-<text id={'right_part_name'}>ON</text>
             </div>
         </header>
     )

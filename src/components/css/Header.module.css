@@ -1,19 +1,19 @@
-.nav-bar {
+.header {
     display: flex;
-    flex-direction: column;
-    grid-area: nav;
+    align-items: center;
+    grid-area: header;
+    background-color: #333336;
     padding: 10px;
 }
 
-.app-name {
+.header img {
+    width: 60px;
+}
+
+.app_name {
     font-family: Comfortaa, serif;
     color: white;
     text-align: center;
     font-size: 25px;
     margin-left: 10px;
-}
-
-#right-part-name {
-    color: #2d8661;
-    font-weight: bold;
 }

@@ -1,8 +1,8 @@
-import '../css/Nav.css';
+import n from './css/Nav.module.css';
 
 function Nav() {
     return (
-        <nav className={'nav-bar'}>
+        <nav className={n.nav_bar}>
             <div>
                 <a>Profile</a>
             </div>
