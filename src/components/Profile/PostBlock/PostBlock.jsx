@@ -5,7 +5,6 @@ import NewPost from "./NewPost/NewPost";
 function PostBlock() {
     return (
         <div className={pb.post_block}>
-            <div>My posts</div>
             <NewPost/>
             <Posts/>
         </div>

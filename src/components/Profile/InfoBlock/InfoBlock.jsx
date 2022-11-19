@@ -1,13 +1,13 @@
-import p from '../Profile.module.css';
+import ib from './InfoBlock.module.css';
 
 function InfoBlock() {
     return (
-        <div className={p.block}>
-            <div className={p.avatar}>
+        <div className={ib.block}>
+            <div className={ib.avatar}>
                 <img src={require('../../../img/avatar.jpg')} alt={'profile-avatar'}/>
             </div>
-            <div className={p.description}>
-                <div className={p.name}>Danila Artemov</div>
+            <div className={ib.description}>
+                <div className={ib.name}>Danila Artemov</div>
                 <div>Date of birth:</div>
                 <div>City:</div>
                 <div>Education:</div>

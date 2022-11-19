@@ -1,0 +1,24 @@
+.block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #333336;
+    padding: 10px;
+}
+
+.avatar img {
+    width: 125px;
+    border-radius: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 30px;
+    margin-bottom: 20px;
+}

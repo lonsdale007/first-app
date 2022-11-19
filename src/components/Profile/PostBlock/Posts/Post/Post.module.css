@@ -2,10 +2,22 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #333336;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
-.post img {
+.avatar img {
     width:30px;
     margin-right: 10px;
     border-radius: 50%;
+}
+
+.like {
+    cursor: pointer;
+}
+
+.like img {
+    width: 15px;
 }
