@@ -1,6 +1,6 @@
 import p from './Post.module.css';
 
-function Post() {
+function Post(props) {
     return (
         <div className={p.post}>
             <div className={p.content}>
@@ -8,7 +8,7 @@ function Post() {
                     <img src={require('../../../../../img/avatar.jpg')} alt={''}/>
                 </div>
                 <div className={p.text}>
-                    Text...
+                    {props.text}
                 </div>
             </div>
             <div className={p.like}>
