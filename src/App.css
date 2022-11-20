@@ -10,13 +10,13 @@
     "header header"
     "nav content";
     grid-template-rows: 80px 1fr;
-    grid-template-columns: 1fr 10fr;
-    grid-gap: 10px;
+    grid-template-columns: 2fr 10fr;
     color: lightgray;
     font-family: Corbel, serif;
     font-size: 20px;
     margin: 0 auto;
     width: 1100px;
+    height: 100%;
 }
 
 #right_part_name {
