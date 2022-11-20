@@ -1,6 +1,6 @@
 import p from './Post.module.css';
 
-function Post(props) {
+const Post = (props) => {
     return (
         <div className={p.post}>
             <div className={p.content}>

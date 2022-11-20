@@ -1,6 +1,6 @@
 import p from './ProfileCover.module.css';
 
-function ProfileCover() {
+const ProfileCover = () => {
     return (
         <div className={p.cover}>
             <img src={require('../../../img/cover.jpg')} alt={'profile-cover'}/>

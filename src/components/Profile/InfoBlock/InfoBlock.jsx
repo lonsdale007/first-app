@@ -1,6 +1,6 @@
 import ib from './InfoBlock.module.css';
 
-function InfoBlock() {
+const InfoBlock = () => {
     return (
         <div className={ib.block}>
             <div className={ib.avatar}>

@@ -1,6 +1,6 @@
 import np from './NewPost.module.css';
 
-function NewPost() {
+const NewPost = () => {
     return (
         <div className={np.new_post}>
             <div>New post</div>

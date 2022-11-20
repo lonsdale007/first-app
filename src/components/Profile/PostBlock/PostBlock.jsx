@@ -2,7 +2,7 @@ import pb from './PostBlock.module.css';
 import Posts from "./Posts/Posts";
 import NewPost from "./NewPost/NewPost";
 
-function PostBlock() {
+const PostBlock = () => {
     return (
         <div className={pb.post_block}>
             <NewPost/>

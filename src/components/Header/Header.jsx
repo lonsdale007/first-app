@@ -1,7 +1,7 @@
 import logo from "../../logo.svg";
 import h from './Header.module.css';
 
-function Header() {
+const Header = () => {
     return (
         <header className={h.header}>
             <img src={logo} alt={''}/>

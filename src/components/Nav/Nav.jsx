@@ -1,6 +1,6 @@
 import n from './Nav.module.css';
 
-function Nav() {
+const Nav = () => {
     return (
         <nav className={n.nav_bar}>
             <div>
