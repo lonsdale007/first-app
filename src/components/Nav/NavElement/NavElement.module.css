@@ -1,0 +1,22 @@
+.element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.element:hover {
+    background-color: #444444;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+img {
+    width: 20px;
+    margin-right: 10px;
+}
