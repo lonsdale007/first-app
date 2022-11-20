@@ -21,10 +21,20 @@
 }
 
 .like {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     cursor: pointer;
     align-self: end;
+    font-family: Roboto, serif;
+    font-size: 13px;
 }
 
 .like img {
     width: 15px;
+    height: 15px;
+}
+
+.like span {
+    margin-left: 5px;
 }

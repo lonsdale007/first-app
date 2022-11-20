@@ -15,6 +15,7 @@ const Post = (props) => {
                 <img src={require('../../../../../img/unliked.png')}
                      onMouseOver={el => (el.currentTarget.src = require('../../../../../img/unliked_hover.png'))}
                      onMouseOut={el => (el.currentTarget.src = require('../../../../../img/unliked.png'))} alt={''}/>
+                <span>{props.likes_count}</span>
             </div>
         </div>
     )
