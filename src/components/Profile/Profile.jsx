@@ -5,7 +5,7 @@ import ProfileCover from "./ProfileCover/ProfileCover";
 
 const Profile = () => {
     return (
-        <div className={p.page}>
+        <div className={p.profile}>
             <ProfileCover/>
             <InfoBlock/>
             <PostBlock/>
