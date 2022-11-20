@@ -1,0 +1,6 @@
+.chat {
+    grid-area: chat;
+    background-color: #333336;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
