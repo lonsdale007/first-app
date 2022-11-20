@@ -1,19 +1,27 @@
 .header {
+    width: auto;
     display: flex;
-    align-items: center;
-    grid-area: header;
+    justify-content: center;
     background-color: #333336;
-    padding: 10px;
+    padding: 10px 0 10px 0;
+    grid-area: header;
+}
+
+.content {
+    width: 1070px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .header img {
-    width: 60px;
+    width: 40px;
 }
 
 .app_name {
     font-family: Comfortaa, serif;
     color: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 10px;
 }
