@@ -15,8 +15,9 @@
     background-color: transparent;
     border: none;
     resize: none;
-    font-size: 15px;
+    font-size: 14px;
     outline: none;
     margin-left: 5px;
     color: lightgray;
+    width: 100%;
 }
