@@ -1,0 +1,22 @@
+.search_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-bottom: #222226 2px solid;
+    height: 25px;
+}
+
+.search_block img {
+    width: 15px;
+}
+
+.search_area {
+    background-color: transparent;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    outline: none;
+    margin-left: 5px;
+    color: lightgray;
+}
