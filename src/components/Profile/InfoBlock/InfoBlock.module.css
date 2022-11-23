@@ -1,24 +1,41 @@
 .block {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
     border-radius: 10px;
     background-color: #333336;
     padding: 10px;
+    grid-area: info;
+    gap: 20px;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
 }
 
 .avatar img {
     width: 125px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.update_avatar {
+    cursor: pointer;
+    border: none;
+    background-color: rgba(68, 68, 68, 70%);
+    color: lightgray;
+    height: 25px;
+    border-radius: 0 0 10px 10px;
+}
+
+.update_avatar:hover {
+    background-color: rgb(70, 70, 70);
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
 }
 
 .name {
     font-size: 30px;
-    margin-bottom: 20px;
 }
