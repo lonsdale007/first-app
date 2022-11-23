@@ -1,10 +1,12 @@
 .profile {
     grid-area: content;
+    display: grid;
+    grid-template-areas:
+    "cover"
+    "info"
+    "posts";
+    grid-template-rows: 180px auto auto;
+    grid-gap: 10px;
     background-color: transparent;
     border-radius: 10px;
-    padding: 15px;
-}
-
-.cover {
-    display: flex;
 }
