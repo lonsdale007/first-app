@@ -1,25 +1,25 @@
 .new_post {
     display: flex;
     flex-direction: column;
-    background-color: #333336;
+    background-color: #444444;
     border-radius: 10px;
     padding: 10px;
 }
 
 .input_field {
-    background-color: #333333;
+    background-color: transparent;
     height: 60px;
     resize: none;
     padding: 5px;
     border-radius: 5px;
     font-size: 16px;
     color: white;
-    margin-top: 10px;
+    border: none;
+    outline: none;
 }
 
 .submit {
     background-color: lightgray;
-    margin-top: 5px;
     align-self: end;
     border-radius: 5px;
     height: 30px;

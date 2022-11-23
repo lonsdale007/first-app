@@ -3,9 +3,8 @@ import np from './NewPost.module.css';
 const NewPost = () => {
     return (
         <div className={np.new_post}>
-            <div>New post</div>
             <textarea className={np.input_field} placeholder={'What\'s new?'}/>
-            <button className={np.submit} type={'submit'}>Submit</button>
+            <button className={np.submit} type={'submit'}>Post</button>
         </div>
     )
 }
