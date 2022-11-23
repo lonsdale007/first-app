@@ -2,5 +2,4 @@
     display: flex;
     flex-direction: column;
     grid-area: nav;
-    padding: 15px;
 }
