@@ -42,19 +42,19 @@
 }
 
 .like {
+    grid-area: like;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    align-self: end;
     font-family: Roboto, serif;
     font-size: 13px;
-    grid-area: like;
     place-self: end;
+    gap: 5px;
 }
 
 .like img {
     width: 15px;
-    height: 15px;
+    height: 13px;
 }
 
