@@ -9,12 +9,13 @@
 }
 
 ::-webkit-scrollbar {
-    width: 14px;
     background-color: #444444;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: gray;
+    border-radius: 5px;
 }
 
 .app-wrapper {
