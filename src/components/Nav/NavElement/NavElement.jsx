@@ -1,11 +1,12 @@
 import ne from './NavElement.module.css';
+import {NavLink} from "react-router-dom";
 
 const NavElement = (props) => {
     return (
-        <a className={ne.element} href={props.link}>
+        <NavLink className={ne.element} to={props.link}>
             <img className={ne.nav_img} src={props.pic} alt={''}/>
             <span>{props.name}</span>
-        </a>
+        </NavLink>
     )
 }
 
