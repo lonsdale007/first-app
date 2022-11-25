@@ -5,5 +5,4 @@
     grid-template-columns: 1fr 2fr;
     grid-gap: 2px;
     grid-area: content;
-    padding: 15px;
 }
