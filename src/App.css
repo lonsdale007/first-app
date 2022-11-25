@@ -8,6 +8,15 @@
     grid-gap: 10px;
 }
 
+::-webkit-scrollbar {
+    width: 14px;
+    background-color: #444444;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
 .app-wrapper {
     background-color: #222226;
     display: grid;
