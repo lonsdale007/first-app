@@ -3,6 +3,7 @@
     grid-template-areas:
     "avatar name"
     "avatar text";
+    grid-template-rows: 15px 15px;
     grid-template-columns: 1fr 5fr;
     grid-gap: 10px;
     padding: 10px 15px 10px 15px;
@@ -15,8 +16,8 @@
 }
 
 .avatar {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     grid-area: avatar;
     border-radius: 50%;
 }
@@ -25,7 +26,7 @@
     grid-area: name;
     color: white;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .text {
