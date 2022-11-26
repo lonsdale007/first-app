@@ -1,7 +1,7 @@
 .new_post {
     display: flex;
     flex-direction: column;
-    background-color: #444444;
+    background-color: #444446;
     border-radius: 10px;
     padding: 10px;
 }
@@ -18,16 +18,18 @@
     outline: none;
 }
 
-.submit {
-    background-color: lightgray;
+.send_post {
+    background-color: #666;
     align-self: end;
     border-radius: 5px;
     height: 30px;
-    width: 70px;
+    width: 60px;
     border: none;
     cursor: pointer;
+    color: white;
+    font-size: 13px;
 }
 
-.submit:hover {
-    background-color: darkgray;
+.send_post:hover {
+    opacity: 80%;
 }
