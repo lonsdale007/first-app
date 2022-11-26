@@ -1,6 +1,11 @@
 .chat {
     grid-area: chat;
-    background-color: #333336;
     border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "body"
+    "input";
+    grid-template-rows: 50px auto 60px;
+    gap: 1px;
 }
