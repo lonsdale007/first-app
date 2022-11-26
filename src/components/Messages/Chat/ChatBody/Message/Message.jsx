@@ -1,5 +1,4 @@
 import m from './Message.module.css';
-import d from "../../../Dialogs/DialogsBlock/Dialog/Dialog.module.css";
 
 const Message = (props) => {
 
