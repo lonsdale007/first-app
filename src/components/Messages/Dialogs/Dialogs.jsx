@@ -1,13 +1,13 @@
 import d from './Dialogs.module.css'
 import SearchBlock from "./SearchBlock/SearchBlock";
-import Dialog from "./Dialog/Dialog";
+import DialogsBlock from "./DialogsBlock/DialogsBlock";
 
 
 const Dialogs = (props) => {
     return (
         <div className={d.dialogs}>
             <SearchBlock/>
-            <Dialog name={'Elyash'} text={'Hi'}/>
+            <DialogsBlock/>
         </div>
     )
 }
