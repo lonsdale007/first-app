@@ -1,10 +1,13 @@
 .search_block {
+    grid-area: search;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    border-bottom: #222226 2px solid;
-    height: 25px;
+    height: 30px;
+    background-color: #333336;
+    border-top-left-radius: 10px;
+    gap: 5px;
 }
 
 .search_block img {
@@ -17,7 +20,6 @@
     resize: none;
     font-size: 14px;
     outline: none;
-    margin-left: 5px;
     color: lightgray;
     width: 100%;
 }
