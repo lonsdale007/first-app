@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text {
+    grid-area: text;
+    font-size: 15px;
+}
+
+.picture {
+    border-radius: 10px;
+    align-self: center;
+    width: 100%;
+    max-height: 500px;
+}
+
+.like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    font-size: 13px;
+    place-self: end;
+    gap: 5px;
+}
+
+.like img {
+    width: 15px;
+    height: 13px;
+}
