@@ -3,6 +3,6 @@
     grid-template-areas:
     "dialogs chat";
     grid-template-columns: 1fr 2fr;
-    grid-gap: 2px;
+    grid-gap: 1px;
     grid-area: content;
 }
