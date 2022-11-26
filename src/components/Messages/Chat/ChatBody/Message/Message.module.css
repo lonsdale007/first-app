@@ -1,0 +1,31 @@
+.message {
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    width: fit-content;
+    min-width: 150px;
+    height: fit-content;
+}
+
+.incoming {
+    align-self: start;
+    border-radius: 5px 5px 5px 0;
+}
+
+.outgoing {
+    align-self: end;
+    border-radius: 5px 5px 0 5px;
+}
+
+.text {
+    color: white;
+    font-size: 14px;
+}
+
+.date {
+    color: gray;
+    font-size: 11px;
+    align-self: end;
+}
