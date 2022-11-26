@@ -1,7 +1,7 @@
-import db from './DialogsBlock.module.css';
+import db from './DialogsBody.module.css';
 import Dialog from "./Dialog/Dialog";
 
-const DialogsBlock = (props) => {
+const DialogsBody = (props) => {
     return (
         <div className={db.dialogs}>
             <Dialog id={'1'} name={'Elyash'} text={'hi, im fine, wo ba u?'}/>
@@ -9,4 +9,4 @@ const DialogsBlock = (props) => {
     )
 }
 
-export default DialogsBlock;
+export default DialogsBody;
