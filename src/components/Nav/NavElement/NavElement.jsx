@@ -4,8 +4,8 @@ import {NavLink} from "react-router-dom";
 const NavElement = (props) => {
     return (
         <NavLink className={ne.element} to={props.link}>
-            <img className={ne.nav_img} src={props.pic} alt={''}/>
-            <span>{props.name}</span>
+            <img src={props.pic} alt={''}/>
+            <span className={ne.name}>{props.name}</span>
         </NavLink>
     )
 }
