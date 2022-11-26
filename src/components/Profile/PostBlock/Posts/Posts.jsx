@@ -13,8 +13,8 @@ const Posts = () => {
     return (
         <div className={ps.posts}>
             <Post avatar={myPostsData[0].avatar} name={myPostsData[0].name} date={myPostsData[0].date} text={myPostsData[0].text} likes_count={myPostsData[0].likes_count}/>
-            <Post avatar={myPostsData[0].avatar} name={myPostsData[0].name} date={yPostsData[0].date} text={myPostsData[0].text} likes_count={myPostsData[0].likes_count}/>
-            <Post avatar={myPostsData[0].avatar} name={myPostsData[0].name} date={yPostsData[0].date} text={myPostsData[0].text} likes_count={myPostsData[0].likes_count}/>
+            <Post avatar={myPostsData[0].avatar} name={myPostsData[0].name} date={myPostsData[0].date} text={myPostsData[0].text} likes_count={myPostsData[0].likes_count}/>
+            <Post avatar={myPostsData[0].avatar} name={myPostsData[0].name} date={myPostsData[0].date} text={myPostsData[0].text} likes_count={myPostsData[0].likes_count}/>
         </div>
     )
 }
