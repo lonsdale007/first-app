@@ -1,8 +1,10 @@
 .dialogs {
     grid-area: dialogs;
-    background-color: #333336;
-    display: flex;
-    flex-direction: column;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    background-color: #222226;
+    display: grid;
+    grid-template-areas:
+    "search"
+    "dialogs";
+    grid-template-rows: 50px 1fr;
+    grid-gap: 1px;
 }
