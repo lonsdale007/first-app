@@ -7,7 +7,7 @@ const Header = () => {
             <div className={h.content}>
                 <img className={h.header_img} src={logo} alt={''}/>
                 <div className={h.app_name}>
-                    Li-<text id={'right_part_name'}>ON</text>
+                    Li-<span id={'right_part_name'}>ON</span>
                 </div>
             </div>
         </header>
