@@ -1,6 +1,6 @@
 import db from './DialogsBody.module.css';
 import Dialog from "./Dialog/Dialog";
-import avaElya from '../../../../../img/Elya.jpg';
+import avaElya from '../../../../img/Elya.jpg'
 
 const DialogsBody = (props) => {
 
