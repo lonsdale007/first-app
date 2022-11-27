@@ -3,12 +3,12 @@ import PostBlock from "./PostBlock/PostBlock";
 import InfoBlock from "./InfoBlock/InfoBlock";
 import ProfileCover from "./ProfileCover/ProfileCover";
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div className={p.profile}>
             <ProfileCover/>
             <InfoBlock/>
-            <PostBlock/>
+            <PostBlock myPosts={props.myPosts}/>
         </div>
     )
 }
