@@ -2,11 +2,11 @@ import pb from './PostBlock.module.css';
 import Posts from "./Posts/Posts";
 import NewPost from "./NewPost/NewPost";
 
-const PostBlock = () => {
+const PostBlock = (props) => {
     return (
         <div className={pb.post_block}>
             <NewPost/>
-            <Posts/>
+            <Posts myPosts={props.myPosts}/>
         </div>
     )
 }
