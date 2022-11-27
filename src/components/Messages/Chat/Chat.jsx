@@ -7,8 +7,8 @@ import ChatInput from "./ChatInput/ChatInput";
 const Chat = (props) => {
     return (
         <div className={ch.chat}>
-            <ChatHeader name={'Elyash'} avatar={avatar}/>
-            <ChatBody/>
+            <ChatHeader name={'Elvira Shurygina'} avatar={avatar}/>
+            <ChatBody messages={props.messages}/>
             <ChatInput/>
         </div>
     )
