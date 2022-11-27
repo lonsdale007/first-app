@@ -6,7 +6,7 @@ import Messages from "./components/Messages/Messages";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import News from "./components/News/News";
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className={'background-page'}>
@@ -14,9 +14,9 @@ const App = () => {
                 <div className={'app-wrapper'}>
                     <Nav/>
                     <Routes>
-                        <Route path={'/profile'} element={<Profile/>}/>
-                        <Route path={'/messages'} element={<Messages/>}/>
-                        <Route path={'/news'} element={<News/>}/>
+                        <Route path={'/profile'} element={<Profile myPosts={props.myPosts}/>}/>
+                        <Route path={'/messages/*'} element={<Messages messages={props.messages} dialogs={props.dialogs}/>}/>
+                        <Route path={'/news'} element={<News newsPosts={props.newsPosts}/>}/>
                     </Routes>
                 </div>
             </div>
