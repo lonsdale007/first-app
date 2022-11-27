@@ -4,6 +4,5 @@
     border-bottom-left-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 1px;
     height: 100%;
 }
