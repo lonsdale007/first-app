@@ -8,7 +8,7 @@ const Profile = (props) => {
         <div className={p.profile}>
             <ProfileCover/>
             <InfoBlock/>
-            <PostBlock myPosts={props.myPosts}/>
+            <PostBlock myPosts={props.state.myPosts}/>
         </div>
     )
 }
