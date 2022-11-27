@@ -1,14 +1,14 @@
 .new_post {
     display: flex;
     flex-direction: column;
-    background-color: #444446;
+    background-color: #444444;
     border-radius: 10px;
     padding: 10px;
 }
 
 .input_field {
     background-color: transparent;
-    height: 60px;
+    height: 20px;
     resize: none;
     padding: 5px;
     border-radius: 5px;
@@ -16,6 +16,14 @@
     color: white;
     border: none;
     outline: none;
+}
+
+.input_field:focus {
+    height: 60px;
+}
+
+.input_field:focus + .send_post {
+    display: block;
 }
 
 .send_post {
@@ -28,6 +36,7 @@
     cursor: pointer;
     color: white;
     font-size: 13px;
+    display: none;
 }
 
 .send_post:hover {
