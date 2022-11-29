@@ -1,10 +1,22 @@
 import np from './NewPost.module.css';
+import React from 'react';
+import {createPostActionCreator, updateNewPostTextActionCreator} from "../../../../redux/state";
 
-const NewPost = () => {
+const NewPost = (props) => {
+
+    let createPost = () => {
+        props.dispatch(createPostActionCreator());
+    }
+
+    let onNewPostTextChange = (e) => {
+        let text = e.target.value;
+        props.dispatch(updateNewPostTextActionCreator(text));
+    }
+
     return (
         <div className={np.new_post}>
-            <textarea className={np.input_field} placeholder={'What\'s new?'}/>
-            <button className={np.send_post}>Post</button>
+            <textarea onChange={onNewPostTextChange} className={np.input_field} placeholder={'What\'s new?'} value={props.newPostText}/>
+            <button className={np.send_post} onClick={createPost}>Post</button>
         </div>
     )
 }
