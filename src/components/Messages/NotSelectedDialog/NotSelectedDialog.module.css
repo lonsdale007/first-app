@@ -1,0 +1,11 @@
+.page {
+    grid-area: chat;
+    background-color: #333336;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+}
