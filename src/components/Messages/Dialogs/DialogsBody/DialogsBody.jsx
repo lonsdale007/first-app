@@ -3,7 +3,7 @@ import Dialog from "./Dialog/Dialog";
 
 const DialogsBody = (props) => {
 
-    let dialogsElements = props.dialogs.map( d => <Dialog id={d.id} name={d.name} avatar={d.avatar} text={d.text}/> );
+    let dialogsElements = props.dialogs.map( d => <Dialog id={d.id} name={d.name} avatar={d.avatar} text={d.text} key={d.id}/> );
 
     return (
         <div className={db.dialogs}>
