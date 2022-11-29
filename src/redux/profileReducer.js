@@ -20,7 +20,7 @@ const profileReducer = (state = initState, action) => {
     let currentHours = currentDateTime.getHours();
     let currentMinutes = currentDateTime.getMinutes();
     let currentTime = `${currentHours < 10 ? '0' + currentHours : currentHours}:${currentMinutes < 10 ? '0' + currentMinutes : currentMinutes}`;
-
+    debugger
     switch (action.type) {
         case(CREATE_POST):
             let newPost = {
@@ -28,7 +28,7 @@ const profileReducer = (state = initState, action) => {
                 avatar: avaMine,
                 name: 'Danila Artemov',
                 date: `today at ${currentTime}`,
-                text: state.newPostText,
+                text: action.postText,
                 pic: '',
                 likes_count: 0,
             }
