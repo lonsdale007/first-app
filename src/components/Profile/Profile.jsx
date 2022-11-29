@@ -8,7 +8,7 @@ const Profile = (props) => {
         <div className={p.profile}>
             <ProfileCover/>
             <InfoBlock/>
-            <PostBlock myPosts={props.profilePage.myPosts} newPostText={props.profilePage.newPostText} dispatch={props.dispatch}/>
+            <PostBlock/>
         </div>
     )
 }
