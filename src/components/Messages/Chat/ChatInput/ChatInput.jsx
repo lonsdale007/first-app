@@ -1,7 +1,7 @@
 import React from "react";
 import ci from './ChatInput.module.css';
 import send from '../../../../img/send.svg';
-import {sendMessageActionCreator, updateNewMessageTextActionCreator} from "../../../../redux/state";
+import {sendMessageActionCreator, updateNewMessageTextActionCreator} from "../../../../redux/messagesReducer";
 
 const ChatInput = (props) => {
 
