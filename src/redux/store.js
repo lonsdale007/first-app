@@ -9,6 +9,7 @@ import lionScreen from "../img/lionAppScreen.jpg";
 import sunset from "../img/sunset.jpg";
 import profileReducer from "./profileReducer";
 import messagesReducer from "./messagesReducer";
+import newsReducer from "./newsReducer";
 
 let store = {
     _state: {
@@ -64,6 +65,7 @@ let store = {
     dispatch(action) {
         this._state.profilePage = profileReducer(this._state.profilePage, action);
         this._state.messagesPage = messagesReducer(this._state.messagesPage, action);
+        this._state.newsPage = newsReducer(this._state.newsPage, action);
 
         this._callSubscriber(this._state);
     }
