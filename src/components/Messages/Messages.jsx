@@ -7,13 +7,13 @@ import NotSelectedDialog from "./NotSelectedDialog/NotSelectedDialog";
 const Messages = (props) => {
     return (
             <div className={m.messages}>
-                <Dialogs dialogs={props.messagesPage.dialogs}/>
+                <Dialogs/>
                 <Routes>
                     <Route path={'/'} element={<NotSelectedDialog/>}/>
-                    <Route path={'/1'} element={<Chat messages={props.messagesPage.messages.filter(obj => obj.id_dialog === 1)} dispatch={props.dispatch}/>}/>
-                    <Route path={'/2'} element={<Chat messages={props.messagesPage.messages.filter(obj => obj.id_dialog === 2)}/>}/>
-                    <Route path={'/3'} element={<Chat messages={props.messagesPage.messages.filter(obj => obj.id_dialog === 3)}/>}/>
-                    <Route path={'/4'} element={<Chat messages={props.messagesPage.messages.filter(obj => obj.id_dialog === 4)}/>}/>
+                    <Route path={'/1'} element={<Chat/>}/>
+                    <Route path={'/2'} element={<Chat/>}/>
+                    <Route path={'/3'} element={<Chat/>}/>
+                    <Route path={'/4'} element={<Chat/>}/>
                 </Routes>
 
             </div>
