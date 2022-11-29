@@ -7,11 +7,8 @@ import group_avatar from "../img/group_avatar.jpg";
 import nature from "../img/nature.jpg";
 import lionScreen from "../img/lionAppScreen.jpg";
 import sunset from "../img/sunset.jpg";
-
-const CREATE_POST = 'CREATE-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-const SEND_MESSAGE = 'SEND-MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+import profileReducer from "./profileReducer";
+import messagesReducer from "./messagesReducer";
 
 let store = {
     _state: {
@@ -56,9 +53,6 @@ let store = {
     _callSubscriber() {
         console.log('State changed');
     },
-    _getNewID(array) {
-        return array.length+1;
-    },
 
     getState() {
         return this._state;
@@ -68,58 +62,11 @@ let store = {
     },
 
     dispatch(action) {
-        let currentDateTime = new Date();
-        let currentHours = currentDateTime.getHours();
-        let currentMinutes = currentDateTime.getMinutes();
-        let currentTime = `${currentHours<10?'0'+currentHours:currentHours}:${currentMinutes<10?'0'+currentMinutes:currentMinutes}`;
+        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.messagesPage = messagesReducer(this._state.messagesPage, action);
 
-        switch (action.type) {
-            case(CREATE_POST):
-                let now = `today at ${currentTime}`;
-
-                let newPost = {
-                    id: this._getNewID(this._state.newsPage.newsPosts),
-                    avatar: avaMine,
-                    name: 'Danila Artemov',
-                    date: now,
-                    text: this._state.profilePage.newPostText,
-                    pic: '',
-                    likes_count: 0,
-                }
-                this._state.profilePage.myPosts.push(newPost);
-                this._state.profilePage.newPostText = '';
-                this._callSubscriber();
-                break;
-            case(UPDATE_NEW_POST_TEXT):
-                this._state.profilePage.newPostText = action.postText;
-                this._callSubscriber();
-                break;
-            case(SEND_MESSAGE):
-                let newMessage = {
-                    id_dialog: 1,
-                    id_message: this._getNewID(this._state.messagesPage.messages.filter(obj => obj.id_dialog === 1)),
-                    text: this._state.messagesPage.newMessageText,
-                    date: currentTime,
-                    isIncoming: false,
-                }
-
-                this._state.messagesPage.messages.push(newMessage);
-                this._state.messagesPage.newMessageText = '';
-                this._callSubscriber();
-                break;
-            case(UPDATE_NEW_MESSAGE_TEXT):
-                this._state.messagesPage.newMessageText = action.messageText;
-                this._callSubscriber();
-                break;
-            default:
-                console.log('Wrong action type');
-        }
+        this._callSubscriber(this._state);
     }
 }
-
-export const createPostActionCreator = () => ({type: CREATE_POST});
-export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, postText: text});
-export const sendMessageActionCreator = () => ({type: SEND_MESSAGE});
-export const updateNewMessageTextActionCreator = (text) => ({type: UPDATE_NEW_MESSAGE_TEXT, messageText: text});
 
 export default store;
