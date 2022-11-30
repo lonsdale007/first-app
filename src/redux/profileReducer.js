@@ -28,16 +28,21 @@ const profileReducer = (state = initState, action) => {
                 avatar: avaMine,
                 name: 'Danila Artemov',
                 date: `today at ${currentTime}`,
-                text: action.postText,
-                pic: '',
+                text: state.newPostText,
+                pic: null,
                 likes_count: 0,
             }
-            state.myPosts.push(newPost);
-            state.newPostText = '';
-            return state;
+
+            return {
+                ...state,
+                newPostText: '',
+                myPosts: [...state.myPosts, newPost],
+            };
         case(UPDATE_NEW_POST_TEXT):
-            state.newPostText = action.postText;
-            return state;
+            return {
+                ...state,
+                newPostText: action.postText,
+            };
         default:
             return state;
     }

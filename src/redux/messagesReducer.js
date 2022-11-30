@@ -42,12 +42,16 @@ const messagesReducer = (state = initState, action) => {
                 isIncoming: false,
             }
 
-            state.newMessageText = '';
-            state.messages.push(newMessage);
-            return state;
+            return {
+                ...state,
+                newMessageText: '',
+                messages: [...state.messages, newMessage],
+            };
         case(UPDATE_NEW_MESSAGE_TEXT):
-            state.newMessageText = action.messageText;
-            return state;
+            return {
+                ...state,
+                newMessageText: action.messageText,
+            };
         default:
             return state;
     }
