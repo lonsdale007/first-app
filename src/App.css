@@ -1,3 +1,7 @@
+* {
+    color: white;
+}
+
 .background-page {
     display: flex;
     flex-direction: column;
