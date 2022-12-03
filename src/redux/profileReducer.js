@@ -1,8 +1,8 @@
 import user_avatar from "../img/user_avatar.svg";
 import lionScreen from "../img/lionAppScreen.jpg";
 
-const CREATE_POST = 'CREATE-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const CREATE_POST = 'CREATE_POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
 
 const initState = {
     myPosts: [
@@ -22,7 +22,7 @@ const profileReducer = (state = initState, action) => {
     let currentTime = `${currentHours < 10 ? '0' + currentHours : currentHours}:${currentMinutes < 10 ? '0' + currentMinutes : currentMinutes}`;
 
     switch (action.type) {
-        case(CREATE_POST):
+        case CREATE_POST:
             let newPost = {
                 id: 7,
                 avatar: user_avatar,
@@ -38,7 +38,7 @@ const profileReducer = (state = initState, action) => {
                 newPostText: '',
                 myPosts: [...state.myPosts, newPost],
             };
-        case(UPDATE_NEW_POST_TEXT):
+        case UPDATE_NEW_POST_TEXT:
             return {
                 ...state,
                 newPostText: action.postText,
