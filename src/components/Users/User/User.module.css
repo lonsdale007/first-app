@@ -1,0 +1,60 @@
+.user {
+    display: grid;
+    grid-template-areas:
+    "avatar name follow location"
+    "avatar status status location";
+    grid-template-rows: 20px 20px;
+    grid-template-columns: 50px auto 1fr auto;
+    place-items: center;
+    border-bottom: rgba(255, 255, 255, 10%) 1px solid;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.avatar {
+    grid-area: avatar;
+}
+
+.name {
+    grid-area: name;
+    text-decoration: none;
+}
+
+.status {
+    grid-area: status;
+    font-size: 15px;
+    color: #777777;
+    place-self: start;
+}
+
+.follow_btn {
+    grid-area: follow;
+    height: 100%;
+    width: 70px;
+    justify-self: start;
+    color: white;
+    background-color: #2d8661;
+    font-weight: lighter;
+    border-radius: 5px;
+}
+
+.follow_btn:hover {
+    background-color: #2d8888;
+}
+
+.location {
+    grid-area: location;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-self: end;
+}
+
+.country {
+    font-size: 17px;
+}
+
+.city {
+    font-size: 15px;
+    color: #777777;
+}
