@@ -9,7 +9,7 @@ const Avatar = (props) => {
             case 'medium':
                 return a.avatar_m;
             case 'large':
-                return a.avatar_s;
+                return a.avatar_l;
             case 'profile':
                 return a.avatar_profile;
             default:
