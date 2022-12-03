@@ -1,11 +1,11 @@
-import logo from "../../logo.svg";
 import h from './Header.module.css';
+import AppLogo from "../common/AppLogo/AppLogo";
 
 const Header = () => {
     return (
         <header className={h.header}>
             <div className={h.content}>
-                <img className={h.header_img} src={logo} alt={''}/>
+                <AppLogo/>
                 <div className={h.app_name}>
                     Li-<span id={'right_part_name'}>ON</span>
                 </div>
