@@ -1,11 +1,12 @@
 import ib from './InfoBlock.module.css';
-import avatar from '../../../img/avatar.jpg';
+import Avatar from "../../common/Avatar/Avatar";
+import user_avatar from '../../../img/user_avatar.svg'
 
 const InfoBlock = () => {
     return (
         <div className={ib.block}>
             <div className={ib.avatar}>
-                <img src={avatar} alt={'profile-avatar'}/>
+                <Avatar avatar={user_avatar} size={'profile'}/>
                 <button className={ib.update_avatar}>Update</button>
             </div>
             <div className={ib.description}>
