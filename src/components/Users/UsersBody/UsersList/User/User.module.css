@@ -5,10 +5,13 @@
     "avatar status status location";
     grid-template-rows: 20px 20px;
     grid-template-columns: 50px auto 1fr auto;
-    place-items: center;
-    border-bottom: rgba(255, 255, 255, 10%) 1px solid;
+    border-top: rgba(255, 255, 255, 10%) 1px solid;
     padding: 10px;
     grid-gap: 10px;
+}
+
+.user:first-child {
+    border-top: none;
 }
 
 .avatar {
@@ -18,11 +21,12 @@
 .name {
     grid-area: name;
     text-decoration: none;
+    font-size: 17px;
 }
 
 .status {
     grid-area: status;
-    font-size: 15px;
+    font-size: 13px;
     color: #777777;
     place-self: start;
 }
@@ -30,12 +34,13 @@
 .follow_btn {
     grid-area: follow;
     height: 100%;
-    width: 70px;
+    width: 60px;
     justify-self: start;
     color: white;
     background-color: #2d8661;
     font-weight: lighter;
     border-radius: 5px;
+    font-size: 12px;
 }
 
 .follow_btn:hover {
@@ -51,10 +56,10 @@
 }
 
 .country {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .city {
-    font-size: 15px;
+    font-size: 13px;
     color: #777777;
 }
