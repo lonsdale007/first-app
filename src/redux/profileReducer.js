@@ -3,8 +3,10 @@ import lionScreen from "../assets/images/lionAppScreen.jpg";
 
 const CREATE_POST = 'CREATE_POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
+const SET_USER_PROFILE = 'SET_USER_PROFILE';
 
 const initState = {
+    profile: null,
     myPosts: [
         {id: 1, avatar: user_avatar, name: 'Danila Artemov', date: '10 Nov at 15:24', text: 'Way of Samurai', likes_count: 3},
         {id: 2, avatar: user_avatar, name: 'Danila Artemov', date: '17 Nov at 11:13', text: 'Wassup, m8?', likes_count: 1},
@@ -43,6 +45,11 @@ const profileReducer = (state = initState, action) => {
                 ...state,
                 newPostText: action.postText,
             };
+        case SET_USER_PROFILE:
+            return {
+                ...state,
+                profile: action.profile
+            }
         default:
             return state;
     }
@@ -50,5 +57,6 @@ const profileReducer = (state = initState, action) => {
 
 export const createPostActionCreator = () => ({type: CREATE_POST});
 export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, postText: text});
+export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile});
 
 export default profileReducer;
