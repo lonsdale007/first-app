@@ -1,0 +1,25 @@
+.paginator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.page_number {
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+}
+
+.selected_page {
+    color: white;
+}
+
+.prev_page, .next_page {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    user-select: none;
+}
