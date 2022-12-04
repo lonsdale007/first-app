@@ -1,9 +1,9 @@
 import logo from "../../../logo.svg";
-import al from './AppLogo.module.css';
+import styles from './AppLogo.module.css';
 
 const AppLogo = () => {
     return (
-        <div className={al.logo_wrapper}>
+        <div className={styles.logo_wrapper}>
             <img src={logo} alt={'AppLogo'}/>
         </div>
     )

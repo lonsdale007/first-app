@@ -1,9 +1,9 @@
-import p from './ProfileCover.module.css';
-import cover from '../../../img/cover.jpg';
+import styles from './ProfileCover.module.css';
+import cover from '../../../assets/images/cover.jpg';
 
 const ProfileCover = () => {
     return (
-        <div className={p.cover}>
+        <div className={styles.cover}>
             <img src={cover} alt={''}/>
         </div>
     )

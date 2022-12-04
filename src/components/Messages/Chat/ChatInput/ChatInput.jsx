@@ -1,6 +1,6 @@
 import React from "react";
-import ci from './ChatInput.module.css';
-import send from '../../../../img/send.svg';
+import styles from './ChatInput.module.css';
+import send from '../../../../assets/images/send.svg';
 
 const ChatInput = (props) => {
 
@@ -14,9 +14,9 @@ const ChatInput = (props) => {
     }
 
     return (
-        <div className={ci.new_message}>
-            <input onChange={onNewMessageTextChange} className={ci.input} type={'text'} placeholder={'Write a message...'} value={props.newMessageText}/>
-            <span onClick={onSendMessageClick} className={ci.send}>
+        <div className={styles.new_message}>
+            <input onChange={onNewMessageTextChange} className={styles.input} type={'text'} placeholder={'Write a message...'} value={props.newMessageText}/>
+            <span onClick={onSendMessageClick} className={styles.send}>
                 <img src={send} alt={''}/>
             </span>
         </div>

@@ -1,12 +1,12 @@
-import sb from './DialogsSearch.module.css';
-import search_icon from '../../../../img/search.svg';
+import styles from './DialogsSearch.module.css';
+import search_icon from '../../../../assets/images/search.svg';
 
 
 const DialogsSearch = (props) => {
     return (
-        <div className={sb.search_block}>
+        <div className={styles.search_block}>
             <img src={search_icon} alt={''}/>
-            <input className={sb.search_area} placeholder={'Search'} type={'text'}/>
+            <input className={styles.search_area} placeholder={'Search'} type={'text'}/>
         </div>
     )
 }

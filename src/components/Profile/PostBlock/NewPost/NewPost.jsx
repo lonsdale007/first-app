@@ -1,4 +1,4 @@
-import np from './NewPost.module.css';
+import styles from './NewPost.module.css';
 import React from 'react';
 
 const NewPost = (props) => {
@@ -14,9 +14,9 @@ const NewPost = (props) => {
     }
 
     return (
-        <div className={np.new_post}>
-            <textarea onChange={onNewPostTextChange} className={np.input_field} placeholder={'What\'s new?'} value={props.newPostText}/>
-            <button className={np.send_post} onClick={onCreatePostClick}>Post</button>
+        <div className={styles.new_post}>
+            <textarea onChange={onNewPostTextChange} className={styles.input_field} placeholder={'What\'s new?'} value={props.newPostText}/>
+            <button className={styles.send_post} onClick={onCreatePostClick}>Post</button>
         </div>
     )
 }

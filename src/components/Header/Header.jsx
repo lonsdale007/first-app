@@ -1,12 +1,12 @@
-import h from './Header.module.css';
+import styles from './Header.module.css';
 import AppLogo from "../common/AppLogo/AppLogo";
 
 const Header = () => {
     return (
-        <header className={h.header}>
-            <div className={h.content}>
+        <header className={styles.header}>
+            <div className={styles.content}>
                 <AppLogo/>
-                <div className={h.app_name}>
+                <div className={styles.app_name}>
                     Li-<span id={'right_part_name'}>ON</span>
                 </div>
             </div>

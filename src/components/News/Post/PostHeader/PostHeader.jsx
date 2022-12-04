@@ -1,12 +1,12 @@
-import ph from './PostHeader.module.css';
+import styles from './PostHeader.module.css';
 
 const PostHeader = (props) => {
     return (
-        <div className={ph.header}>
+        <div className={styles.header}>
             <img src={props.avatar} alt={''}/>
-            <div className={ph.info}>
-                <span className={ph.name}>{props.name}</span>
-                <span className={ph.date}>{props.date}</span>
+            <div className={styles.info}>
+                <span className={styles.name}>{props.name}</span>
+                <span className={styles.date}>{props.date}</span>
             </div>
         </div>
     )

@@ -1,8 +1,8 @@
-import nsd from './NotSelectedDialog.module.css';
+import styles from './NotSelectedDialog.module.css';
 
 const NotSelectedDialog = (props) => {
     return (
-        <div className={nsd.page}>
+        <div className={styles.page}>
             Select a chat
         </div>
     )

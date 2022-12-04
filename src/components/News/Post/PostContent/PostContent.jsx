@@ -1,14 +1,14 @@
-import pc from './PostContent.module.css';
-import liked from '../../../../img/liked.svg';
-import unliked from '../../../../img/unliked.svg';
-import unliked_hover from '../../../../img/unliked_hover.svg';
+import styles from './PostContent.module.css';
+import liked from '../../../../assets/images/liked.svg';
+import unliked from '../../../../assets/images/unliked.svg';
+import unliked_hover from '../../../../assets/images/unliked_hover.svg';
 
 const PostContent = (props) => {
     return (
-        <div className={pc.content}>
-            <div className={pc.text}>{props.text}</div>
-            <img className={pc.picture} src={props.pic} alt={''}/>
-            <div className={pc.like}>
+        <div className={styles.content}>
+            <div className={styles.text}>{props.text}</div>
+            <img className={styles.picture} src={props.pic} alt={''}/>
+            <div className={styles.like}>
                 <img src={unliked}
                      onMouseOver={el => (el.currentTarget.src = unliked_hover)}
                      onMouseOut={el => (el.currentTarget.src = unliked)} alt={''}/>

@@ -1,11 +1,11 @@
-import m from './Message.module.css';
+import styles from './Message.module.css';
 
 const Message = (props) => {
 
     return (
-        <div className={m.message + (props.isIncoming ? ' ' + m.incoming : ' ' + m.outgoing)}>
-            <div className={m.text}>{props.text}</div>
-            <span className={m.date}>{props.date}</span>
+        <div className={styles.message + (props.isIncoming ? ' ' + styles.incoming : ' ' + styles.outgoing)}>
+            <div className={styles.text}>{props.text}</div>
+            <span className={styles.date}>{props.date}</span>
         </div>
     )
 }
