@@ -7,9 +7,13 @@
     grid-template-columns: 40px 1fr;
     grid-gap: 10px;
     padding: 10px;
-    border-bottom: #444444 thin solid;
+    border-top: rgba(255, 255, 255, 10%) thin solid;
     cursor: pointer;
     text-decoration: none;
+}
+
+.dialog:first-child {
+    border-top: none;
 }
 
 .active {
@@ -36,7 +40,7 @@
 
 .text {
     grid-area: text;
-    color: lightgray;
+    color: gray;
     font-size: 13px;
     font-weight: normal;
 }
