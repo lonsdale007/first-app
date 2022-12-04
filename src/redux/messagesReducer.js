@@ -1,4 +1,4 @@
-import user_avatar from '../img/user_avatar.svg';
+import user_avatar from '../assets/images/user_avatar.svg';
 
 const SEND_MESSAGE = 'SEND_MESSAGE';
 const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE_NEW_MESSAGE_TEXT';

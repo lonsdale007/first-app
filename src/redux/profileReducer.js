@@ -1,5 +1,5 @@
-import user_avatar from "../img/user_avatar.svg";
-import lionScreen from "../img/lionAppScreen.jpg";
+import user_avatar from "../assets/images/user_avatar.svg";
+import lionScreen from "../assets/images/lionAppScreen.jpg";
 
 const CREATE_POST = 'CREATE_POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';

@@ -1,8 +1,8 @@
-import user_avatar from "../img/user_avatar.svg";
-import group_avatar from "../img/group_avatar.svg";
-import sunset from "../img/sunset.jpg";
-import lionScreen from "../img/lionAppScreen.jpg";
-import nature from "../img/nature.jpg";
+import user_avatar from "../assets/images/user_avatar.svg";
+import group_avatar from "../assets/images/group_avatar.svg";
+import sunset from "../assets/images/sunset.jpg";
+import lionScreen from "../assets/images/lionAppScreen.jpg";
+import nature from "../assets/images/nature.jpg";
 
 
 let initState = {
