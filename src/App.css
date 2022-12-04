@@ -12,12 +12,12 @@
 }
 
 ::-webkit-scrollbar {
-    background-color: #444444;
+    background-color: #333336;
     width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: gray;
+    background-color: #666666;
     border-radius: 5px;
 }
 
@@ -28,7 +28,6 @@
     "nav content";
     grid-template-columns: 2fr 10fr;
     grid-area: app-wrapper;
-    color: lightgray;
     font-family: Roboto, serif;
     font-weight: 300;
     font-size: 20px;
