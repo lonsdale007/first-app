@@ -10,7 +10,7 @@ import settings_icon from '../../assets/images/settings.svg';
 const Nav = () => {
     return (
         <nav className={styles.nav_bar}>
-            <NavElement pic={profile_icon} name={'Profile'} link={'/profile'}/>
+            <NavElement pic={profile_icon} name={'My profile'} link={'/profile/26975'}/>
             <NavElement pic={messages_icon} name={'Messages'} link={'/messages'}/>
             <NavElement pic={users_icon} name={'Users'} link={'/users'}/>
             <NavElement pic={news_icon} name={'News'} link={'/news'}/>
